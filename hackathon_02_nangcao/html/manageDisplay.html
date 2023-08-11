@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+<div class="managementPage">
+    <div class="form_input">
+        <form action="" id="form">
+            <h2>Thông tin học viên</h2>
+            <div class="input_line">
+                <label for="fullName">Họ và Tên: </label>
+                <input id="fullName" type="text" placeholder="Vui lòng nhập tên" required>
+            </div>
+            <div class="input_line">
+                <label for="email">Email: </label>
+                <input id="email" type="email" placeholder="vui lòng nhập email" required>
+            </div>
+            <div class="input_line">
+                <label for="phone">Số điện thoại: </label>
+                <input id="phone" type="number" placeholder="vui lòng nhập số điện thoại" required>
+            </div>
+            <div class="input_line">
+                <label for="address">Quê quán: </label>
+                <input id="address" type="text" placeholder="vui lòng nhập địa chỉ que quán" required>
+            </div>
+            <div class="input_line input_radio">
+                <label>Giới tính: </label>
+                <div class="gender">
+                    <input type="radio" name="gender" id="male" value="1">Nam
+                    <input type="radio" name="gender" id="female" value="1">Nữ
+                </div>
+
+            </div>
+            <div class="btn">
+                <button class="btn_save" type="submit">Lưu lại</button>
+            </div>
+        </form>
+    </div>
+    <div class="table">
+        <h2>Danh sách học viên</h2>
+        <div class="input_table">
+            <label for="input_search">Tìm kiếm tên học viên: </label>
+            <input type="text" id="input_search" placeholder="Nhập vào tên muốn tìm kiếm">
+            <button onclick="search()">Search</button>
+        </div>
+        <table>
+            <caption></caption>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Điện thoại</th>
+                <th>Địa chỉ</th>
+                <th>Gender</th>
+                <th>Hành động</th>
+                <th>
+                    <button onclick="arrange()">Sắp xếp (alpha b)</button>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="display">
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
+<script src="../js/manage.js"></script>

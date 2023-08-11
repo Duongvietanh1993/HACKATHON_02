@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.managementPage{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 2rem;
+}
+.input_table input{
+    width:400px !important;
+}
+button{
+    padding: .3rem;
+    width: 80px;
+}
+.table{
+    width: 75%;
+    border: 1px solid black;
+    padding: 1rem 2rem 2rem;
+}
+table{
+    width: 100%;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+th{
+    border-bottom: 3px solid black !important;
+}
+th,td{
+    border: 1px solid black;
+    text-align: center;
+    padding: .3rem;
+}
+th:nth-child(2){
+    width: 15%;
+}
+th:nth-child(7){
+    width: 13%;
+}
+th:nth-child(8){
+    width: 7%;
+}
+.form_input {
+    width:500px;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem ;
+}
+
+.form_input .form .input_line {
+
+}
+.input_line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+.input_radio .gender{
+padding-right: 13.5rem;
+}
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn_save {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 125px;
+    padding: 10px 20px;
+    background-color: #1ea2ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_save:hover {
+    background-color: #0271be;
+}
