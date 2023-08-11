@@ -66,7 +66,8 @@ h2 {
 
 input[type="text"],
 input[type="email"],
-input[type="number"] {
+input[type="number"],
+input[type="tel"] {
     width: 70%;
     padding: 5px;
     margin-bottom: 10px;
